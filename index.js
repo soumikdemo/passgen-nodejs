@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const program = require('commander') 
 const chalk = require('chalk')
 const clipboardy = require('clipboardy')
@@ -6,7 +8,6 @@ const savePassword = require('./utils/savePassword')
 const log = console.log
 
 program.version('1.0.0').description('Simple Password Generator')
-
 program
     .option('--l, --length <number>', 'length of password', 8)
     .option('--s, --save', 'save password to passwords.txt', false)
