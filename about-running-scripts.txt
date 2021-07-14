@@ -1,0 +1,17 @@
+Steps to Enable PowerShell Scripts Execution on Windows 10
+To enable PowerShell scripts, follow the steps:
+
+1. Press the Windows Key to open the Start menu.
+2. Type “PowerShell“.
+3. Right-click on the PowerShell result and select “Run as administrator“.
+4. After opening the PowerShell window, execute “get-executionpolicy” to know the current execution policy.
+5. Chances are it will say “Restricted“. This means the scripts are blocked.
+6. In the PowerShell window, execute the “set-executionpolicy remotesigned” command.
+7. Type “A” next to the confirmation message and press “Enter“.
+
+You’ve changed the execution policy to enable PowerShell scripts.
+That is all. From now on you can execute the scripts created directly on your machine or signed scripts download from the internet or other computers.
+
+If you want to run unsigned scripts downloaded from the internet or other computers, you need to set the execution policy to “unrestricted”. To do that, execute the “set-executionpolicy unrestricted” command in the PowerShell window.
+
+To disable the PowerShell script execution, run the “set-executionpolicy restricted” command and you are good to go.
