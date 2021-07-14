@@ -17,7 +17,7 @@ Run file
 node index (options)
 ```
 
-To create a symlink to run "passgen" from anywhere (read "about-running-scripts.txt")
+To create a symlink to run "passgen" from anywhere (read about-running-scripts.txt)
 
 ```
 npm link
